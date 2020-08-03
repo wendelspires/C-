@@ -10,7 +10,6 @@ int main (){
 	
 	std::cout << "Enter the length of the room: ";
 	std::cin >> room_length;
-
 	std::cout << "The area of the room is: " << room_width * room_length << " square feet" << std::endl;
 
 	return 0;
