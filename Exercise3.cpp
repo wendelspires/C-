@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int main(){
 
 //name, age, hourly_wage
@@ -10,10 +12,12 @@ int main(){
 int age {0};
 double hourly_wage {23.50};
 string name;
-
-	std::cin >> name;
-	std::cin >> age;
-	std::cout >> name >> age >> hourly_wage >> std::endl;
+	
+	cout << "Whats your name?: ";
+	cin >> name;
+	cout << "Your age: ";
+	cin >> age;
+	cout << "Name: " << name << "\nAge: " << age << "\nHourly_Wage: " << hourly_wage << std::endl;
 	
 return 0;
 }
