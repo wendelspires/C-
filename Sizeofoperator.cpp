@@ -33,8 +33,9 @@ int main(){
 	
 	cout << "Size of using variables names" << endl;
 	int age {21};
-	
 	cout << "age is " << sizeof (age) << " bytes" << endl;
 	
+	double wage {22.24};
+	cout << "wage is: " << wage << " bytes " << endl;
 	
 }
