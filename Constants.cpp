@@ -8,7 +8,7 @@ using namespace std;
 int main(){
 	
 	int number_of_rooms;
-	const float tax = 3.6;
+	const float tax = 0.06;
 	const int price_per_room = 30;
 	
 	cout << "Hello, welcome to Frank's Carpet Cleaning Service" << endl;
@@ -18,15 +18,16 @@ int main(){
 	cout << endl;
 	cout << "Our Prices" << endl;
 	cout << "=============================" << endl << endl;
-	cout << "Price per room: " << price_per_room << " $ " << endl;
+	cout << "Price per room: " << price_per_room << "%" << endl;
 	cout << "Tax: " << tax << " $ " << endl << endl;
 	
 	float cost = (number_of_rooms * price_per_room);
-	float total = (cost + tax);
+	float taxes = (cost * tax);
+	float total_estimate = ( cost + taxes);
 	
 	cout << "Cost: " << cost << endl;
-	cout << "Total: " << total << endl;
-	
+	cout << "Taxes: " << taxes << endl;
+	cout << "Total Estimate: " << total_estimate << endl;
 	
 	//cout << "Number of rooms: " <<  
 	
