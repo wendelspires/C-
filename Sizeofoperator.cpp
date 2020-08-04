@@ -36,6 +36,6 @@ int main(){
 	cout << "age is " << sizeof (age) << " bytes" << endl;
 	
 	double wage {22.24};
-	cout << "wage is: " << wage << " bytes " << endl;
+	cout << "wage is: " << sizeof (wage) << " bytes " << endl;
 	
 }
