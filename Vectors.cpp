@@ -54,10 +54,10 @@ int main(){
 	std::cout << movie_ratings[0][3] << std::endl;
 	
 	std::cout << "\nHere are the movies rating for reviewer #2 using vector sintax: " << std::endl;
-	std::cout << movie_ratings.at(0).at(0) << std::endl;
-	std::cout << movie_ratings.at(0).at(1) << std::endl;
-	std::cout << movie_ratings.at(0).at(2) << std::endl;
-	std::cout << movie_ratings.at(0).at(3) << std::endl;
+	std::cout << movie_ratings.at(1).at(0) << std::endl;
+	std::cout << movie_ratings.at(1).at(1) << std::endl;
+	std::cout << movie_ratings.at(1).at(2) << std::endl;
+	std::cout << movie_ratings.at(1).at(3) << std::endl;
 	
 	
 	return 0;
