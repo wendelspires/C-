@@ -45,5 +45,11 @@ int main(){
 	std::cout << "Nicle: " << n << std::endl;
 	std::cout << "Penny: " << p << std::endl;
 	
+	//Calculate how many of each coin you get from cent input
+	//std::cout << "-------------------------" << std::endl;
+	//std::cout << "Solution with the modulo operator" << std::endl;
+	//std::cout << "-------------------------" << std::endl;
+	
+	
 	return 0;	
 }
