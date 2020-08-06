@@ -53,6 +53,5 @@ int main (){
 	use_coat = (temperature < temperature_for_coat || wind_speed > wind_speed_for_coat);
 	std::cout << "Use coat OR? " << use_coat << std::endl;
 
-
 	return 0;
 }
