@@ -20,24 +20,32 @@ int main (){
 		std::cin >> selection;
 		
 		if (selection == 'P' || selection == 'p')
-			std::cout << "[ " << number << " ] " << std::endl;
+			if (number != 0)
+				std::cout << "[ " << number << " ] " << std::endl;
+			else
+				std::cout << "The list is empty" << std::endl;
 		
-		else if (selection == 'A' || selection == 'a')
+		else if (selection == 'A' || selection == 'a'){
 			std::cout << "Add a number: ";
 			std::cin >> number;
-	
-/*		else if (selection == 'M' || selection == 'm')
-			std::cout << "The mean of the numbers: " << std::endl;
+		}
 		
-		else if (selection == 'S' || selection == 's')
+		else if (selection == 'M' || selection == 'm'){
+			std::cout << "The mean of the numbers: " << std::endl;
+		}
+		
+		else if (selection == 'S' || selection == 's'){
 			std::cout << "Smallest number: " << std::endl;
-	
-		else if (selection == 'L' || selection == 'l')
+		}
+		
+		else if (selection == 'L' || selection == 'l'){
 			std::cout << "Largest number: " << std::endl;
-	
-		else if (selection == 'Q' || selection == 'q')
+		}
+		
+		else if (selection == 'Q' || selection == 'q'){
 			std::cout << "Goodbye! " << std::endl;
-*/
+		}
+		
 		else
 			std::cout << "Sorry, try again..." << std::endl;
 		
