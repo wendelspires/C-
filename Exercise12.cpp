@@ -16,7 +16,8 @@ Dica: você vai precisar usar outra variável.
 
 int main (){
 	
-	int num1 {};
+	//Exercise 1
+/*	int num1 {};
 	int num2 {};
 	
 	std::cout << "Enter a number: ";
@@ -25,23 +26,38 @@ int main (){
 	std::cout << "Enter a other number: ";
 	std::cin >> num2;
 	
-	if (num1 > num2){
-		std::cout << "First Number " << num1 << std::endl;
-		std::cout << "Second Number : " << num2 << std::endl;
-		std::cout << "The first number is greater than the second" << std::endl;
-	}
-
-	if (num2 > num1){
-		std::cout << "First Number " << num1 << std::endl;
-		std::cout << "Second Number : " << num2 << std::endl;
-		std::cout << "The second number is greater than the first" << std::endl;
-	
 	if (num1 == num2){
 		std::cout << "First Number " << num1 << std::endl;
 		std::cout << "Second Number : " << num2 << std::endl;
 		std::cout << "Both Numbers" << std::endl;
 	}
+	else{
 	
+		if (num1 > num2){
+			std::cout << "First Number " << num1 << std::endl;
+			std::cout << "Second Number : " << num2 << std::endl;
+			std::cout << "The first number is greater than the second" << std::endl;
+		}
+
+		else if (num2 > num1){
+			std::cout << "First Number " << num1 << std::endl;
+			std::cout << "Second Number : " << num2 << std::endl;
+			std::cout << "The second number is greater than the first" << std::endl;
+		}
+*/
+
+	//Exercise 2
+	
+	int num1, num2, num3 {};
+	
+	std::cout <<"Enter a number: ";
+	std::cin >> num1;
+	
+
+
+
+
+
 	return 0;
 	}
 }
