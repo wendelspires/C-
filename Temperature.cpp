@@ -10,9 +10,10 @@ double fahrenheit_to_celsius (double fahrenheit){
 		return celsius;
 }
 
-double fahrenheit_to_kelvin (double fahrenheit){
+double fahrenheit_to_kelvin (double &fahrenheit){
 		
 		double kelvin;
+		fahrenheit = 0;
 		kelvin = (fahrenheit - 32) * 5/9 + 273.15;
 		return kelvin;
 }
