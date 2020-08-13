@@ -11,21 +11,24 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
 
 int main(void)
 {
-  CURL *curl;
-  CURLcode res;
-  std::string readBuffer;
+	CURL *curl;
+	CURLcode res;
 
-  curl = curl_easy_init();
+	curl_global_init(CURL_GLOBAL_ALL);
+	
+	curl = curl_easy_init();
   
   if(curl) {
 	
-	curl_easy_setopt(curl, CURLOPT_POST, "http://example.com/foo.bin");
-	curl_easy_setopt(curl, CURLOPT_POST, 1L);
+	curl_easy_setopt(curl, CURLOPT_POST, "https://httpbin.org/post/");
+	curl_easy_setopt(curl, CURLOPT_POSTFIELDS, "name=Wendel&project=curl");
 		
 	res = curl_easy_perform(curl);
 	curl_easy_cleanup(curl);
 	
-  }
+	std::cout << "OK? " << curl_easy_strerror(res) << std::endl;
+	
+	}
+	
 	return 0;
  }
-
