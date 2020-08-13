@@ -18,18 +18,12 @@ int main(void)
   curl = curl_easy_init();
   
   if(curl) {
-    
-	curl_easy_setopt(curl, CURLOPT_URL, "https://www.google.com.br/");
-    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
-    curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
 	
-	
-	//set up the read callback with CURLOPT_READFUNCTION
+	curl_easy_setopt(curl, CURLOPT_POST, "http://example.com/foo.bin");
+	curl_easy_setopt(curl, CURLOPT_POST, 1L);
+		
 	res = curl_easy_perform(curl);
-    curl_easy_cleanup(curl);
-	
-	//res = curl_easy_perform(curl);
-	//curl_easy_cleanup(curl);
+	curl_easy_cleanup(curl);
 	
   }
 	return 0;
